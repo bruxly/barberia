@@ -1,0 +1,91 @@
+
+#principal{
+    width: 100%;
+ 
+}
+
+.titulo-principal{
+    padding-left: 30px;
+}
+
+.bloque-principal{
+    background-color: #cccccc;/*color de la pnatalla*/
+    padding: 20px;/*aumenta el espacio*/
+}
+
+
+.titulo-personalizado {
+    text-align: center;
+    height: 80px;
+   border: 10px solid #000;
+    padding-top: 50px;
+    margin: 20px;;
+}
+
+.caja-nuestros-servicios{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*hubico nuestros servicos en la parte superior izquierda*/
+nav{
+    position: absolute;
+    margin-top: -70px;
+    margin-right: 0;
+}
+
+.caja-nuestros-servicios li{
+    display: inline;/*coloca en horizontal la lista y solo ocupa el tamaño de sus caracteres*/
+}
+
+nav a{
+   
+    text-transform: uppercase;/*coloca mayusculas */
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*capturar el movimiento del mouse para cambiar de color el inicio,productos,contactos*/
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;/*el mouse al estar encima de las barras de navegacion le coloca una linea de botton*/
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.diferenciles{
+    background: #ffffff;
+    padding: 10px/*aumenta el espacio interno*/;
+}
+
+
+
+.items{
+    font-style: italic;
+}
+
+ul{
+    display: inline-block;/*usa solo su contenido de block*/
+    vertical-align: top;/*la lista queda arriba*/
+    width: 20%;/*ocupa 20 % de la pantalla*/
+    margin-right: 15%; 
+}
+
+.imagenDiferenciales{ 
+    width: 50%;
+
+}
+

@@ -1,0 +1,374 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header{
+    background-color: #bbbb;
+    padding: 20px 0;
+}
+
+.logo img{
+    width: 20%;/*tamaño del logo*/
+   
+}
+
+/*centra el logo y kas barras de navegacion*/
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+nav {
+    position: absolute;
+    top: 48px;
+    right: 0;
+}
+
+/*modifico a horizontal la lista (inicio,productos,contacto)*/
+nav li{
+    display: inline;/*coloca en horizontal la lista y solo ocupa el tamaño de sus caracteres*/
+    margin: 0 0 0 10px;/*separo (inicio,productos,contacto)hacia la izquierda*/
+}
+
+/*modificamos (inicio,productos,contacto)la fuente,color y eleminamos la linea por defecto de los links*/
+nav a{
+    text-transform: uppercase;/*coloca mayusculas */
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/*capturar el movimiento del mouse para cambiar de color el inicio,productos,contactos*/
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;/*el mouse al estar encima de las barras de navegacion le coloca una linea de botton*/
+}
+
+/*imagenes de corte de cabello y barba*/
+img{
+    width: 70%;
+}
+
+
+
+/*las imagenes se centran en la pantalla para computadores*/
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;/*distancia de los titulos d las tarjetas con el encabezado*/
+}
+
+/*las imagenes quedan horizontalmente de corte de cabello y barba*/
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;/*cada tarjeta ocupa 30% de espacio*/
+    vertical-align: top;
+    margin: 0 1.5%;/*damos espacio externo en las tarjetas 0 en vertical y 1.5 lateral*/
+    padding: 30px 20px;/*espacio interno de las tarjetas*/
+    box-sizing: border-box;/*se ajusta al 30% del width para no sobrepasar la pantalla*/
+    border: 2px solid #000000;/*ancho del borde,estilo del borde de las targetas,color del borde*/
+    /*border-top-width: 10px;*//*el borde de la parte superior se puede hanchar*/ 
+    /*border-style: dashed;*//*el borde de las tarjetas se pone en rayas pequeñas*/
+    /*border-style:dotted;*//*el borde se pone en bordes pequeños*/
+    border-radius: 10px;/*bordes de las tarjetas*/
+
+}
+
+/*el borde de las tarjetas cambia de color al pasar el mouse por encima*/
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+/*al dar click sobre la tarjeta el borde vuelve a cambiar de color*/
+.productos li:active{
+    border-color:#088c19;
+
+}
+
+/*letra de en cabezado de las imagenes*/
+.productos h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 28px;
+}
+
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;/*separo el precio de la descrepcion*/
+}
+
+
+footer{
+    text-align: center;/*centro el logo del footer*/
+    background-color: #cccccc;
+    /*background: url(/imgs/cabello.jpg);*//*ejemplo de como colocar una foto en footer*/
+}
+
+/*logo del footer*/
+footer img{
+    width: 20%;/*tamaño del logo*/
+    padding: 15px;/*separo el logo de la parte de arriba del footer*/
+}
+
+.Copyright{
+    color: #ffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+
+
+/*                                         estilos de la pagina de contacto                         */
+
+
+/*ancho y alto de main formularios*/
+
+
+form{
+    margin: 40px 200px;/*ubicacion de toda la parte datos del usuario el main*/
+}
+
+
+form label, form legend{
+    display: block;/*coloco en vertical los input de la informacion de los usuarios*/
+    font-size: 20px;/*tamaño de fuente nombres correo telefono*/
+    margin: 0 0 10px;/*espacio entre titulos y cajas parte superior de cada una */
+}
+
+
+.input-padron{
+    display: block;/*coloco en vertical el input la caja de enviar formularios*/
+    margin: 0 0 20px;
+    padding: 10px 25px; 
+    width: 50%;/*el largo de los input ocupa el 50% de los 940 px del main*/
+
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+/*estilos del boton enviar formulario*/
+.enviar{
+    width: 50%;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #cccccc;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all ;/*el tiempo que se demora con el color*/
+    cursor: pointer;/*modifico la flecha del mause por la mano*/
+}
+
+.enviar:hover{
+    background: red;
+    transform: scale(1.20) /*rotate(40deg);/*esta linea esta asociada con transition de la clase .enviar*/
+    /*rotate hace girar el boton enviar formulario*/
+}
+
+/*estilos de la tabla*/
+
+table{
+    display: block;
+    /*position: absolute;*/
+    /*position: relative;*/
+    margin: 10px 200px;
+    
+}
+
+/*encabezadp de la tabla*/
+thead{
+    background: #555555;/*colo del titulo de la tabla*/
+    color: white;
+    font-weight: bold;
+
+}
+
+/*lineas de la tabla*/
+td, th{
+    border: 1px solid #000000;
+}
+
+
+
+/*           estilos pagina index.html         */
+
+/* primera imagen */
+.barnner{
+    width: 100%;
+}
+
+.bloque-principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+    
+
+}
+/*
+main{
+    width: 70%;
+    padding: 0 0 0 280px;/*muevo el parrafo hacia la izquierda*/
+    /*margin-right: 40px;
+}*/
+
+/*titulo principal*/
+.titulo-principal {
+    
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1rem;
+    clear: left;/*organiza el texto que acompaña a logo_tijeras*/
+}
+
+/*modifica primera letra de los titulos*/
+/*.titulo-principal:first-letter{
+    font-weight: bold;
+}
+*/
+/*se modifica primera linea d cada parrafo*/
+/*p:first-line{
+    font-size: 2em;
+}*/
+
+/*se agrega antes y despues del titulo*/
+/*.titulo-principal:before{
+    content: "[";
+}
+.titulo-principal:after{
+    content: "]";
+}
+*/
+
+.bloque-principal p{
+    margin: 0 0 2rem;
+    font-size: 1.5em;
+
+}
+
+.bloque-principal strong{
+    font-weight: bold;
+}
+
+.bloque-principal em{
+    font-style: italic;
+}
+
+.utencillos{
+    width: 10%;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p{
+    font-size: 1.5em;
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+   
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.7;
+    font-size: 1.4em;
+}
+
+/*agrego estrella a los items*/
+.items:before{
+    content: "✨  ";
+}
+
+
+.imagen-diferenciales{
+    width: 60%;
+    transition: 400ms;/*para que no se opaque la imagen rapido*/
+    box-shadow: 10px 10px 30px 15px #000000;/*sombreado*/
+}
+
+/*se pone negro el primer items*/
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .caja, .bloque-principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+        
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+

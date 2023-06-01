@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+    <!--Todo lo que va en la parte superior de la pagina-->
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Contacto Barberia Barbas</title>
+        <link rel="stylesheet" href="reset.css"><!--quito las medidas predeterminadas que trae la pagina en css-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    
+    <body>
+        <header>
+            <div class="caja">
+                <h1 class="logo"><img src="/imgs/logo.jpg" alt="logo de la barberia"></h1><!--logo de barberia-->
+        
+                <nav><!--se coloca cada ves insertamos links-->
+                    <ul>
+                        <li><a href="http://127.0.0.1:5501/index.html">Inicio</a></li><!--enlace para llevarme a otra pagina-->
+                        <li><a href ="http://127.0.0.1:5501/productos.html">Nuestros Productos</a></li>
+                        <!--<li><a href ="https://api.whatsapp.com/send?phone=%2B573212033979&text=Reg%C3%A1lame+tu+pedido+por+favor">Contacto</a></li>-->
+                    </ul>
+    
+                </nav>
+               
+            </div>
+          
+        </header>
+
+
+        <main>
+            <!---Creacion de formularios para que los usuarios ingresen su informacion-->
+            <!--- esta etiquteta form es precisa para crear formularios -->
+            <form>
+                <label for="nombreapellido">Nombres y Apellidos</label><!--con for y id enlazo label con input-->
+                <input type="text" id="nombreapellido" class="input-padron" required><!--cuadro donde el usuario ingresa sus nombres y apellidos-->
+                <!--required obliga al usuario a colocar el nombre  en el formulario-->
+
+                <label for="correoElectronico">Correo Electronico</label><!--con for y id enlazo label con input-->
+                <input type="email" id="correoElectronico" class="input-padron" required placeholder="email@dominio.com"><!--cuadro donde el usuario ingresa su correo electronico-->
+                <!--required obliga al usuario a colocar el email  en el formulario-->
+
+                <label for="telefono">Telefono</label><!--con for y id enlazo label con input-->
+                <input type="tel" id="telefono" class="input-padron" class="input-padron" required placeholder="xxxxxxxxxx">
+                 <!--required obliga al usuario a colocar el telefono  en el formulario, placeholder es guia para el usuario-->
+
+                <label for="mensaje">Mensaje</label><!--cuadro donde el usuario ingresa su mensaje-->
+                <textarea cols="41" rows="10" id="mensaje" class="input-padron" required></textarea>
+                <!--required obliga al usuario a colocar un mensje  en el formulario,placeholder es guia para el usuario-->
+
+                <!--opcion de elejir como quiere el cliente quiere que lo contactemos,la etiqueta fieldset es especial
+                para items que hace una misma cosa-->
+                <fieldset>
+
+                    <legend>¿Como le gustaria que contactemos?</legend><!---legend es una etiqueta de contenido-->
+
+                    <label for="radio-email"><input type="radio" name="contacto" 
+                        value="email" id="radio-email">Email
+                    </label><!--con el for y id enlazo la caja de opcion de email-->
+                    <!--opcion email-->
+
+                    <label for="radio-telefono"><input type="radio" name="contacto"
+                        value="telefono" id="radio-telefono">Telefono
+                    </label><!--con el for y id enlazo la caja de opcion de telefono-->
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contacto"
+                        alue="email" id="radio-whatsapp" checked>whatsApp
+                    </label><!--con el for y id enlazo la caja de opcion de whatsapp,con checked la opcion esta seleccionada de forma predeterminada-->
+                </fieldset>
+
+
+                <!---el usario elije la opcion aque horas quiere quiere que lo atiende
+                la etiqueta fieldset sirve pa items que hacen una misma cosa-->
+                <fieldset>
+                    <legend>¿A que horas le gustaria ser atendido?</legend><!---legend es una etiqueta de contenido-->
+                    <select>
+                        <option>Mañana</option><!---me permite crear opciones para el usuario-->
+                        <option>Medio dia</option><!---me permite crear opciones para el usuario-->
+                        <option>Tarde</option><!---me permite crear opciones para el usuario-->
+                        <option>Noche</option><!---me permite crear opciones para el usuario-->
+
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la barberia?</label><!--de esta forma conectamos el input con el click-->
+                <input type="submit" value="Enviar Formulario" class="enviar"><!---construyo boton de enviar formulario,con checked la opcion esta seleccionada de forma predeterminada-->
+                </div>
+                
+            </form>
+
+            <!---creacion de la tabla-->
+            <table>
+                <!--encabezado de la tabla-->
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <!---body de la tabla-->
+                
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08am ~ 08pm</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>08am ~ 08pm</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08am ~ 08pm</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>08am ~ 08pm</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08am ~ 08pm</td>
+                    </tr>
+                    <tr>
+                        <td>Sabado</td>
+                        <td>08am ~ 08pm</td>
+                    </tr>
+                </tbody>
+                
+               
+            </table>
+
+        </main>
+
+        <footer>
+            <img src="/imgs/logo.jpg" alt="logo-barberia">
+            <p class="Copyright">&copy Copyright Barberia Barbas-2023</p>
+
+
+        </footer>
+    </body>
+
+
+</html>
